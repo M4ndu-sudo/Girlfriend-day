@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Happy Girlfriend's Day ❤️</title>
-<style>
-body{
-background:#ffe6f0;
-font-family:Arial,sans-serif;
-text-align:center;
-padding:40px;
+
+<div class="page" id="page2">
+<h2>Hehe...</h2>
+
+<p>I knew u were gonna click it.</p>
+
+<p>Now...</p>
+
+<p>Let's start the surprise.</p>
+
+<button onclick="nextPage(3)">Open &lt;3</button>
+</div>
+
+<script>
+function nextPage(num){
+document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+document.getElementById("page"+num).classList.add("active");
 }
-button{
-padding:15px 25px;
-font-size:20px;
-border:none;
-border-radius:15px;
-background:#ff4d88;
-color:white;
-}
-#gift{
-display:none;
-margin-top:30px;
-}
+</script>
+
+</body>
+</html>
