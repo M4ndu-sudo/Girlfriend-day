@@ -1,22 +1,2 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>For Jabia</title><style>body{margin:0;background:#ffeef5;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;text-align:center}.page{display:none;padding:30px}.active{display:block}button{margin-top:20px;padding:12px 25px;font-size:18px;border:none;border-radius:10px;background:#ff6fa5;color:#fff}</style></head><body><div id="page1" class="page active"><h1>Hilluu Jabiaa.. 🌷</h1><p>I made something for u</p><p>Butttt...</p><p>There's one condition...</p><p>Click only if u luv meh :(</p><button onclick="showPage(2)">I do!! &lt;3</button></div><div id="page2" class="page"><h2>Hehe...</h2><p>I knew u were gonna click it.</p><p>Now...</p><p>Let's start the surprise.</p><button>Open &lt;3</button></div><script>function showPage(n){document.getElementById("page1").classList.remove("active");document.getElementById("page2").classList.add("active");}</script></body></html>
 
-<div class="page" id="page2">
-<h2>Hehe...</h2>
-
-<p>I knew u were gonna click it.</p>
-
-<p>Now...</p>
-
-<p>Let's start the surprise.</p>
-
-<button onclick="nextPage(3)">Open &lt;3</button>
-</div>
-
-<script>
-function nextPage(num){
-document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
-document.getElementById("page"+num).classList.add("active");
-}
-</script>
-
-</body>
-</html>
